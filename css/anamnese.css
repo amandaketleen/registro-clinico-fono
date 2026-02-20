@@ -83,15 +83,16 @@ label {
 }
 
 .radio-group {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 18px;
+   display: flex;
+  gap: 16px;
+  flex-wrap: wrap;  
 }
 
 .radio-group label {
   display: flex;
-  align-items: center; /* 🔥 ISSO AQUI */
+  align-items: center;
   gap: 6px;
+  white-space: nowrap;
   font-size: 14px;
   color: #3a1a4f;
   cursor: pointer;
