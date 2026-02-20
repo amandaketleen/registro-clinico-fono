@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 .topo {
@@ -96,7 +97,6 @@ label {
   font-size: 14px;
   color: #3a1a4f;
   cursor: pointer;
-
 }
 
 
