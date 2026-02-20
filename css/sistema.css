@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+.cabecalho {
+  height: 80px;
+  background: #74468a7c;
+  color: #682d82;
+  font-family: 'Arians', sans-serif;
+
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  align-items: center;
+
+  padding: 0 24px;
+}
+
+.cabecalho h1 {
+  grid-column: 2;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+.logout {
+  grid-column: 3;
+  justify-self: end;
+  color: #682d82;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+
+.logout:hover{
+  transition: 0.2s;
+  color: #bf2efe;
+}
+
+.container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+.sidebar {
+  width: 220px;
+   background: linear-gradient(135deg, #8944ae00, #7e6bc271);
+  padding: 24px;
+  border-right: 1px solid rgba(195, 188, 235, 0.032);
+}
+
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+
+  gap: 12px;
+   font-family: 'Arians', sans-serif;
+}
+
+.sidebar a {
+   
+  text-decoration: none;
+  color: #7b25a0;
+  font-weight: 500;
+}
+
+
+.sidebar a:hover{
+  transition: 0.2s;
+  color: #bf2efe;
+}
+
+
+
+.content {
+  flex: 1;
+  padding: 32px;
+  font-family: 'Arians', sans-serif;
+  background: linear-gradient(135deg, #8944ae09, #7e6bc271);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centraliza horizontal */
+  justify-content: center;  /* centraliza vertical */
+  text-align: center;
+}
+
+
+.welcome{
+   margin: 0;
+  color: #7b25a0;
+}
+
+
+.welcome h2 {
+  font-size: 30px;
+ 
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo-area img {
+  width: 100%;
+  max-width: 380px;
+}
+
+
+@media (max-width: 768px) {
+    
+  .cabecalho {
+    grid-template-columns: 1fr auto;
+  }
+
+  .cabecalho h1 {
+    font-size: 22px;
+    grid-column: 1;
+    text-align: center;
+  }
+  .logout {
+    font-size: 16px;
+  }
+
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #c3bceb33;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .welcome {
+    margin: 0;
+  }
+
+  .welcome p{
+   display: none;
+  }
+
+ 
+
+  .logout {
+    font-size: 16px;
+  }
+
+}

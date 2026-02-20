@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devolutiva</title>
+  <link rel="stylesheet" href="../css/devolutiva.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="topo">
+    <a id="btn-voltar">Voltar</a>
+    <h1>Devolutiva</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- IDENTIFICAÇÃO -->
+    <section class="identificacao">
+      <p><strong>Fonoaudióloga:</strong> Débora Barros</p>
+      <p><strong>Paciente:</strong> <span id="nomePaciente">—</span></p>
+    </section>
+
+    <!-- ANEXAR -->
+    <section class="card">
+      <h2>Anexar arquivo</h2>
+
+      <input type="file" id="arquivo" />
+
+      <button id="btnAnexar">Anexar arquivo</button>
+    </section>
+
+    <!-- LISTA -->
+    <section class="card">
+      <h2>Arquivos anexados</h2>
+
+      <ul class="lista-arquivos" id="listaArquivos">
+        <!-- JS vai preencher -->
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="../js/devolutiva.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  background: #fff4ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pacientes-container {
+  padding: 40px;
+}
+
+.cabecalho {
+ text-align: center;
+  margin-bottom: 32px;
+}
+
+.cabecalho h1 {
+  font-size: 30px;
+  color: #420e55;
+  margin-bottom: 2%;
+}
+
+.cabecalho a {
+  text-decoration: none;
+  
+}
+
+.btn-voltar {
+  padding: 7px 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #752f8f;
+  color: #f9dced;
+  transition: 0.2s;
+}
+
+.btn-voltar:hover{
+    background: #6f3d81;
+}
+
+
+
+
+.btn-adicionar {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #5e2075;
+  color: #f9dced;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-adicionar:hover{
+    background-color:#833e9d ;
+}
+
+i{
+    margin-right: 4px;
+}
+
+.lista-pacientes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+ 
+}
+
+.card-paciente {
+  background: #d8bce1bf;
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 10%;
+  
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-paciente:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.189);
+}
+
+.card-paciente h3 {
+  margin-bottom: 8px;
+  color: #342043;
+  font-size: 15px;
+}
+
+.card-paciente span {
+  font-size: 14px;
+  color: #666666;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cabecalho h1 {
+    font-size: 22px;
+  }
+
+  .btn-adicionar {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .card-paciente {
+    margin-top: 0;
+  }
+
+}
+
+/* ===== MOBILE PEQUENO ===== */
+
+@media (max-width: 480px) {
+
+  .lista-pacientes {
+    grid-template-columns: 1fr; /* 1 card por linha */
+  }
+
+}

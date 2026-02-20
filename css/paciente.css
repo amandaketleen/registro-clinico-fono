@@ -1,0 +1,137 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(123deg, #fff4ff, #d0f0f67b, #e8f4b56d);
+  color: #1f2933;
+}
+
+/* =========================
+   TOPO
+========================= */
+.topo {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topo a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+ background: #f1dbf9;
+  color: #16011b;
+  border: 1px solid #3d09482b;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.topo a:hover{
+  background-color: #6f3d81;
+  color: #deb4f5;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.container-principal {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+  margin-top: 5%;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+}
+
+/* =========================
+   DADOS DO PACIENTE
+========================= */
+.dados-pacientes h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #342043;
+}
+
+.dados-pacientes {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.dados-pacientes h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-top: 16px;
+}
+
+.dados-pacientes h2:first-child {
+  margin-top: 0;
+}
+
+.dados-pacientes p {
+  font-size: 16px;
+  margin-top: 4px;
+  color: #111827;
+}
+
+/* =========================
+   PRONTUÁRIO
+========================= */
+.prontuario {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.prontuario h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #342043;
+}
+
+/* =========================
+   CARDS
+========================= */
+.prontuario a {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  margin-top: 5%;
+  transition: all 0.2s ease;
+}
+
+.prontuario a:hover {
+  background-color: #f9eeff;
+  border-color: #ebc7fe;
+  transform: translateY(-2px);
+}
+
+.prontuario .card a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1f2933;
+  display: block;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+@media (max-width: 768px) {
+  .container-principal {
+    grid-template-columns: 1fr;
+  }
+}

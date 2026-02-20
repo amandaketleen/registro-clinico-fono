@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnese Adulto</title>
+     <link rel="stylesheet" href="../css/anamnese.css">
+</head>
+<body>
+    
+     <header class="topo">
+        <a id="btn-voltar">Voltar</a>
+
+        <h1>Anamnese</h1>
+    </header>
+
+    <main class="container-principal">
+
+<form class="form-anamnese">
+
+<fieldset>
+  <legend>Identificação</legend>
+
+  <label>Data</label>
+  <input type="date" name="data">
+
+  <label>Nome</label>
+  <input type="text" name="nome" required>
+
+  <label>Data de nascimento</label>
+  <input type="date" name="dataNascimento" required>
+
+  <label>Idade</label>
+  <input type="text" name="idade">
+
+  <label>Sexo</label>
+  <input type="text" name="sexo">
+</fieldset>
+
+<fieldset>
+  <legend>Contato</legend>
+
+  <label>Telefone</label>
+  <input type="text" name="telefone" required>
+
+  <label>Endereço</label>
+  <input type="text" name="endereco">
+</fieldset>
+
+<fieldset>
+  <legend>Profissão</legend>
+
+  <label>Profissão</label>
+  <input type="text" name="profissao">
+
+  <label>Trabalha falando muito?</label>
+  <textarea rows="2" name="falaMuito"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Saúde Geral</legend>
+
+  <label>Alergias</label>
+  <textarea rows="2" name="alergias"></textarea>
+
+  <label>Uso de medicação</label>
+  <textarea rows="2" name="medicacao"></textarea>
+
+  <label>Cirurgias</label>
+  <textarea rows="2" name="cirurgias"></textarea>
+
+  <label>Fumante?</label>
+  <textarea rows="2" name="fumante"></textarea>
+
+  <label>Consumo de álcool</label>
+  <textarea rows="2" name="alcool"></textarea>
+
+  <label>Otites de repetição</label>
+  <textarea rows="2" name="otites"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Queixa Principal</legend>
+  <textarea rows="4" name="queixa"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Observações</legend>
+  <textarea rows="4" name="observacoes"></textarea>
+</fieldset>
+
+<button type="submit">Salvar Anamnese</button>
+</form>
+
+<script type="module" src="../js/anamnese.js"></script>
+
+
+    </main>
+</body>
+</html>

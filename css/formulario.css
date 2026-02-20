@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ background: linear-gradient(123deg, #fff4ff, #d0f0f67b, #e8f4b56d);
+  font-family: 'Poppins', sans-serif;
+}
+
+.topo {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topo a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+ background: #f1dbf9;
+  color: #16011b;
+  border: 1px solid #3d09482b;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.topo a:hover{
+  background-color: #6f3d81;
+  color: #e8bcff;
+}
+
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-paciente {
+  background-color: #ffffff9e;
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.form-paciente h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #420e55;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.campo label {
+  font-size: 14px;
+  color: #240636;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #203a43;
+}
+
+.opcoes-sexo {
+  display: flex;
+  gap: 20px;
+}
+
+.opcoes-sexo label {
+  font-size: 14px;
+   color: #240636;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  font-family: inherit;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+
+input[type="radio"] {
+  accent-color: #a02fa5;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+
+.btn-salvar {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+ background: #c48de2;
+  color: #000000  ;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-salvar:hover{
+  background-color: #632479;
+  color: #e5bbff;
+}
+
+

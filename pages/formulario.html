@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Paciente</title>
+  <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+
+   <header class="topo">
+        <a href="../pages/pacientes.html">Voltar</a>
+    </header>
+
+  <main class="form-container">
+
+    <form class="form-paciente">
+      <h2>Novo Paciente</h2>
+
+      <div class="campo">
+        <label>Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite o nome do paciente" required>
+      </div>
+
+      <div class="campo">
+        <label>Data de nascimento</label>
+        <input type="date" id="dataNascimento" required>
+      </div>
+
+      <div class="campo">
+  <label>Sexo</label>
+
+  <div class="opcoes-sexo">
+    <label>
+      <input type="radio" name="sexo" value="F" required>
+      Feminino
+    </label>
+
+    <label>
+      <input type="radio" name="sexo" value="M">
+      Masculino
+    </label>
+  </div>
+</div>
+
+<div class="campo">
+  <label>Dias e horário de atendimento</label>
+  <input 
+    type="text" 
+    id="atendimento" 
+    placeholder="Ex: Segunda e Quarta • 14h">
+</div>
+
+<div class="campo">
+  <label>Responsável (apenas para crianças)</label>
+  <input 
+    type="text" 
+    id="responsavel" 
+    placeholder="Nome do responsável">
+</div>
+
+
+
+      <div class="campo">
+        <label>Observações (opcional)</label>
+        <textarea id="observacoes" rows="3" placeholder="Observações iniciais"></textarea>
+      </div>
+
+      <button type="submit" class="btn-salvar">
+        Salvar paciente
+      </button>
+    </form>
+ 
+  </main>
+
+ <script src="../js/formulario.js"></script>
+
+
+</body>
+</html>

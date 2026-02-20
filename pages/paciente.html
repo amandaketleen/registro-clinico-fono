@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente</title>
+    <link rel="stylesheet" href="../css/paciente.css">
+</head>
+<body>
+    <header class="topo">
+        <a href="../pages/pacientes.html">Voltar</a>
+    </header>
+
+    <main class="container-principal">
+
+        <section class="dados-pacientes">
+        <h1>Paciente</h1>
+         <div class="campo">
+    <h3>Nome</h3>
+    <p id="nome-paciente"></p>
+  </div>
+
+  <div class="campo">
+    <h3>Data de Nascimento</h3>
+    <p id="nascimento-paciente"></p>
+  </div>
+
+  <div class="campo">
+    <h3>Sexo</h3>
+    <p id="sexo-paciente"></p>
+  </div>
+
+  <div class="campo">
+    <h3>Responsável</h3>
+    <p id="responsavel-paciente"></p>
+  </div>
+
+  <div class="campo">
+    <h3>Atendimento</h3>
+    <p id="atendimento-paciente"></p>
+  </div>
+
+    <div class="campo">
+    <h3>Observações</h3>
+  <p id="observacoes-paciente">—</p>
+  </div>
+ 
+        </section>
+
+        <section class="prontuario">
+            <h1>Prontuário</h1>
+
+            <div class="card">
+             <a class="link-prontuario" data-destino="anamnese-infantil" href="#">Anamnese</a>
+            </div>
+
+             <div class="card">
+                <a class="link-prontuario" data-destino="evolucao" href="#">Evolução</a>
+            </div>
+
+             <div class="card">
+                <a class="link-prontuario" data-destino="devolutiva" href="#">Devolutiva</a>
+            </div>
+
+             <div class="card">
+                <a class="link-prontuario" data-destino="encaminhamento" href="#">Encaminhamento</a>
+
+            </div>
+
+        </section>
+
+      
+ 
+
+
+        
+
+    </main>
+
+    <script type="module" src="../js/paciente.js"></script>
+</body>
+</html>

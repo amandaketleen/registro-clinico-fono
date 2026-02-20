@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução</title>
+    <link rel="stylesheet" href="../css/evolucao.css">
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header class="topo">
+    <a id="btn-voltar">Voltar</a>
+    <h1>Evolução</h1>
+  </header>
+
+  <main class="container">
+
+    <div class="identificacao">
+  <p><strong>Fonoaudióloga: </strong>Débora Barros</p>
+  <p><strong>Paciente:</strong> <span id="nomePaciente"></span></p>
+</div>
+
+
+  <!-- DATA -->
+<div class="data-evolucao">
+  <label><strong>Data da evolução</strong></label>
+  <input type="date" id="dataEvolucao">
+</div>
+
+<!-- FORMULÁRIO -->
+<section class="card-evolucao no-print">
+  <div class="bloco">
+    <label><strong>Paciente</strong></label>
+    <select id="estadoPaciente">
+      <option value="">Selecione</option>
+      <option value="sonolento">Sonolento</option>
+      <option value="disperso">Disperso</option>
+      <option value="agitado">Agitado</option>
+      <option value="animado">Animado</option>
+      <option value="tranquilo">Tranquilo</option>
+      <option value="faltou (doente)">Faltou (doente)</option>
+      <option value="desmarcou">Desmarcou</option>
+    </select>
+  </div>
+
+  <div class="bloco">
+    <label><strong>Realizou</strong></label>
+
+    <select id="realizou1">
+      <option value="">Selecione</option>
+      <option value="pareamento de imagens">Pareamento de imagens</option>
+      <option value="voz">Voz</option>
+      <option value="prosódia">Prosódia</option>
+      <option value="leitura e escrita">Leitura e escrita</option>
+      <option value="motricidade orofacial">Motricidade orofacial</option>
+    </select>
+
+    <select id="realizou2">
+      <option value="">Selecione</option>
+      <option value="respiração">Respiração</option>
+      <option value="estimulação de fala e linguagem">Estimulação de fala e linguagem</option>
+      <option value="interação social">Interação social</option>
+      <option value="oratória">Oratória</option>
+      <option value="fonoarticulação">Fonoarticulação</option>
+      <option value="não realizou sessão">Não realizou sessão</option>
+    </select>
+  </div>
+
+  <div class="bloco">
+    <label><strong>Observações (se necessário)</strong></label>
+    <textarea id="observacoes" rows="4"></textarea>
+  </div>
+
+  <div class="acoes">
+    <button class="salvar" id="btnSalvar">Salvar evolução</button>
+    <button class="imprimir" onclick="window.print()">Imprimir</button>
+  </div>
+</section>
+
+<!-- EVOLUÇÕES REGISTRADAS -->
+<section class="resultado print-area">
+  <h3>Evoluções registradas</h3>
+  <div id="listaEvolucoes"></div>
+</section>
+
+
+  </main>
+
+  <script src="../js/evolucao.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro Clínico | Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <main class="login-container">
+    <h1>LOGIN</h1>
+
+    <img src="./assets/icon-fono.jpg" class="icone" alt="ícone profissional">
+
+    <form id="loginForm">
+
+      <label>
+        Usuário
+        <input type="text" id="usuario" required>
+      </label>
+
+      <label>
+        Senha
+        <input type="password" id="senha" required>
+      </label>
+
+      <button type="submit">Entrar</button>
+
+      <p id="mensagemErro" style="color: red; display: none;"></p>
+
+    </form>
+  </main>
+
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

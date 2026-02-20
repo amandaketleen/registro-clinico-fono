@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7f0fb, #e6f3f8);
+  min-height: 100vh;
+}
+
+/* TOPO */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topo a {
+  text-decoration: none;
+  background: #f1dbf9;
+  color: #16011b;
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+   transition: 0.2s;
+}
+
+.topo a:hover{
+   background-color: #6f3d81;
+  color: #e8bcff;
+  cursor: pointer;
+}
+
+.topo h1{
+    margin-right: 45%;
+    color: #3a1a4f;
+}
+/* CONTAINER */
+.container {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #ffffffcc;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* IDENTIFICAÇÃO */
+.identificacao {
+  margin-bottom: 28px;
+  font-size: 15px;
+  color: #3a1a4f;
+}
+
+/* UPLOAD */
+.upload {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.upload input[type="file"] {
+  padding: 12px;
+  border: 1px dashed #cdb6dd;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.upload button {
+  width: fit-content;
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+  color: #fff;
+}
+
+.upload button:hover{
+    background:#9d4edd ;
+}
+
+input[type="file"]::file-selector-button {
+  cursor: pointer;
+}
+
+
+/* LISTA */
+.lista-arquivos h2 {
+  margin-bottom: 12px;
+  color: #4a135f;
+}
+
+.lista-arquivos ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista-arquivos li {
+  padding: 12px 16px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e2d6ee;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#btn-voltar {
+  padding: 7px 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #9d4edd;
+  color: #fff;
+  transition: 0.2s;
+}
+
+#btn-voltar:hover{
+    background: #6f3d81;
+}
+
+/* IMPRESSÃO */
+@media print {
+  body {
+    background: white;
+  }
+
+  .topo,
+  button,
+  input[type="file"] {
+    display: none;
+  }
+
+  .container {
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .topo {
+    gap: 50px; /* espaço entre botão e título */
+  }
+
+  .topo h1 {
+    position: static;      /* remove o absoluto */
+    transform: none;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .topo a {
+    align-self: flex-start; /* botão fica à esquerda */
+  }
+
+
+}
+    

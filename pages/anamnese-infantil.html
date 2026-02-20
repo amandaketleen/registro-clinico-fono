@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnese Infantil</title>
+    <link rel="stylesheet" href="../css/anamnese.css">
+</head>
+<body>
+          <header class="topo">
+        <a id="btn-voltar">Voltar</a>
+
+        <h1>Anamnese</h1>
+    </header>
+
+    <main class="container-principal">
+
+<form class="form-anamnese">
+
+<fieldset>
+  <legend>Identificação</legend>
+
+  <label>Data</label>
+  <input type="date" name="data">
+
+  <label>Nome da criança</label>
+  <input type="text" name="nomeCrianca" required>
+
+  <label>Apelido</label>
+  <input type="text" name="apelido">
+
+  <label>Data de nascimento</label>
+  <input type="date" name="dataNascimento" required>
+
+  <label>Idade</label>
+  <input type="text" name="idade">
+
+  <label>Sexo</label>
+  <input type="text" name="sexo">
+
+  <label>Naturalidade</label>
+  <input type="text" name="naturalidade">
+</fieldset>
+
+<fieldset>
+  <legend>Endereço</legend>
+
+  <label>Endereço completo</label>
+  <input type="text" name="endereco">
+
+  <label>CEP</label>
+  <input type="text" name="cep">
+
+  <label>Bairro</label>
+  <input type="text" name="bairro">
+
+  <label>Cidade / UF</label>
+  <input type="text" name="cidade">
+</fieldset>
+
+<fieldset>
+  <legend>Responsáveis</legend>
+
+  <label>Nome da mãe</label>
+  <input type="text" name="nomeMae" required>
+
+  <label>Idade</label>
+  <input type="text" name="idadeMae">
+
+  <label>Profissão</label>
+  <input type="text" name="profissaoMae">
+
+  <label>Telefone</label>
+  <input type="text" name="telefoneMae" required>
+
+  <label>Nome do pai</label>
+  <input type="text" name="nomePai" required>
+
+  <label>Idade</label>
+  <input type="text" name="idadePai">
+
+  <label>Profissão</label>
+  <input type="text" name="profissaoPai">
+
+  <label>Telefone</label>
+  <input type="text" name="telefonePai" required>
+
+  <label>Irmãos (nome e idade)</label>
+  <textarea rows="2" name="irmaos"></textarea>
+
+  <label>Com quem a criança passa mais tempo</label>
+  <input type="text" name="tempoComQuem">
+
+  <label>Contato para emergência</label>
+  <input type="text" name="contatoEmergencia" required>
+</fieldset>
+
+<fieldset>
+  <legend>Gestação</legend>
+
+      <div class="campo">
+ <label>Gestação planejada?</label>
+
+<div class="radio-group">
+  <label>
+    <input type="radio" name="gestacaoPlanejada" value="sim">
+    Sim
+  </label>
+
+  <label>
+    <input type="radio" name="gestacaoPlanejada" value="nao">
+    Não
+  </label>
+
+  <label>
+    <input type="radio" name="gestacaoPlanejada" value="nao_informado">
+    Não informado
+  </label>
+</div>
+
+</div>
+
+  <label>Houve intercorrências na gestação?</label>
+  <textarea rows="2" name="intercorrenciasGestacao"></textarea>
+
+  <label>Uso de medicamentos durante a gestação?</label>
+  <textarea rows="2" name="medicamentosGestacao"></textarea>
+
+  <label>Consumo de álcool ou drogas?</label>
+  <textarea rows="2" name="alcoolDrogasGestacao"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Parto</legend>
+
+  <label>Tipo de parto</label>
+  <input type="text" name="tipoParto">
+
+  <label>Tempo de gestação</label>
+  <input type="text" name="tempoGestacao">
+
+  <label>Chorou ao nascer?</label>
+  <input type="text" name="chorouAoNascer">
+
+  <label>Precisou de UTI?</label>
+  <input type="text" name="uti">
+
+  <label>Tempo de internação</label>
+  <input type="text" name="tempoInternacao">
+</fieldset>
+
+<fieldset>
+  <legend>Desenvolvimento Neuropsicomotor</legend>
+
+  <label>Sustentou a cabeça</label>
+  <input type="text" name="cabeca">
+
+  <label>Sentou</label>
+  <input type="text" name="sentou">
+
+  <label>Engatinhou</label>
+  <input type="text" name="engatinhou">
+
+  <label>Andou</label>
+  <input type="text" name="andou">
+
+  <label>Primeiras palavras</label>
+  <input type="text" name="primeirasPalavras">
+
+  <label>Frases</label>
+  <input type="text" name="frases">
+</fieldset>
+
+<fieldset>
+  <legend>Alimentação</legend>
+
+  <label>Amamentação</label>
+  <textarea rows="2" name="amamentacao"></textarea>
+
+  <label>Uso de mamadeira</label>
+  <textarea rows="2" name="mamadeira"></textarea>
+
+  <label>Uso de chupeta</label>
+  <textarea rows="2" name="chupeta"></textarea>
+
+  <label>Dificuldades alimentares</label>
+  <textarea rows="2" name="dificuldadesAlimentares"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Saúde Geral</legend>
+
+  <label>Alergias</label>
+  <textarea rows="2" name="alergias"></textarea>
+
+  <label>Uso de medicação</label>
+  <textarea rows="2" name="medicacao"></textarea>
+
+  <label>Cirurgias</label>
+  <textarea rows="2" name="cirurgias"></textarea>
+
+  <label>Otites de repetição</label>
+  <textarea rows="2" name="otites"></textarea>
+
+  <label>Exames auditivos</label>
+  <textarea rows="2" name="examesAuditivos"></textarea>
+
+  <label>Problemas respiratórios</label>
+  <textarea rows="2" name="respiratorios"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Queixa Principal</legend>
+  <textarea rows="4" name="queixa"></textarea>
+</fieldset>
+
+<fieldset>
+  <legend>Observações Finais</legend>
+  <textarea rows="4" name="observacoes"></textarea>
+</fieldset>
+
+<button type="submit">Salvar Anamnese</button>
+</form>
+
+
+
+    </main>
+   
+    <script src="../js/anamnese.js"></script>
+
+</body>
+</html>

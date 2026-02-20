@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7f0fb, #e6f3f8);
+  min-height: 100vh;
+}
+
+/* TOPO */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topo h1{
+  margin-right: 45%;
+}
+
+.topo a {
+  text-decoration: none;
+  background: #f1dbf9;
+  color: #16011b;
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.topo a:hover{
+   background-color: #6f3d81;
+  color: #e8bcff;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 24px;
+  background: #ffffffcc;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* IDENTIFICAÇÃO */
+.identificacao {
+  margin-bottom: 24px;
+  font-size: 15px;
+ 
+  color: #3a1a4f;
+}
+
+/* DATA */
+.data-evolucao {
+  margin-bottom: 24px;
+}
+
+.data-evolucao label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.data-evolucao input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d6cbe0;
+}
+
+/* CARD */
+.card-evolucao {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.bloco h3 {
+  margin-bottom: 12px;
+  color: #4a135f;
+}
+
+/* OPÇÕES */
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.opcoes button {
+  border: 1px solid #d6cbe0;
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.opcoes button:hover {
+  background: #f1dbf9;
+}
+
+/* RESULTADO */
+.resultado {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px dashed #cdb6dd;
+}
+
+.resultado h3{
+  margin-bottom: 1% ;
+}
+
+.resultado p {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* AÇÕES */
+.acoes {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.acoes button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.salvar {
+  background-color: #9c4dcc;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.salvar:hover{
+  background: #703595;
+}
+
+.imprimir {
+  background: #ede9fe;
+  color: #4a135f;
+  transition: 0.2s;
+}
+
+.imprimir:hover{
+  background: #e7c1ffa9;
+}
+
+
+.bloco {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 12px 44px 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d6cbe0;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #fff;
+
+  /* SETINHA CUSTOM */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236b21a8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px;
+
+  cursor: pointer;
+}
+
+
+select:focus {
+  outline: none;
+  border-color: #9c4dcc;
+  box-shadow: 0 0 0 2px rgba(156, 77, 204, 0.15);
+}
+
+
+/* OBSERVAÇÕES DA EVOLUÇÃO */
+.bloco textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #d6cbe0;
+  font-family: inherit;
+  font-size: 14px;
+  background: #ffffff;
+  color: #3a1a4f;
+  resize: none;
+}
+
+/* placeholder mais suave */
+.bloco textarea::placeholder {
+  color: #9b8fa8;
+  font-style: italic;
+}
+
+/* foco elegante */
+.bloco textarea:focus {
+  outline: none;
+  border-color: #9c4dcc;
+  box-shadow: 0 0 0 2px rgba(156, 77, 204, 0.15);
+}
+
+/* espaçamento do bloco */
+.bloco {
+  margin-top: 12px;
+}
+
+.item-evolucao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.btn-excluir {
+  background: none;
+  border: none;
+  
+   color: #e5e7eb;
+  background: #6e4e91;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 3px 7px 4px 7px;
+  border-radius: 50px;
+  
+}
+
+.btn-excluir:hover {
+ color: #020003;
+  background: #c0afd2cd;
+}
+
+
+#btn-voltar {
+  padding: 7px 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #9d4edd;
+  color: #fff;
+  transition: 0.2s;
+}
+
+#btn-voltar:hover{
+    background: #6f3d81;
+}
+
+
+
+
+/* IMPRESSÃO */
+@media print {
+  body {
+    background: white;
+  }
+
+  /* some com cabeçalho e botões */
+  .topo,
+  .acoes,
+  .card-evolucao,
+  .data-evolucao,
+  .btn-excluir,
+  form {
+    display: none !important;
+  }
+
+  /* container limpo */
+  .container {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* mostra só as evoluções */
+  .resultado {
+    display: block;
+    margin-top: 0;
+  }
+
+  .resultado h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    letter-spacing: 0.5px;
+  }
+
+  .resultado p {
+    font-size: 14px;
+    line-height: 1.2;
+  
+  }
+
+  .identificacao{
+     margin-top: 2%;
+     color:#020003;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .topo {
+    gap: 60px; /* espaço entre botão e título */
+  }
+
+  .topo h1 {
+    position: static;      /* remove o absoluto */
+    transform: none;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .topo a {
+    align-self: flex-start; /* botão fica à esquerda */
+  }
+
+
+}
+    
