@@ -72,38 +72,40 @@ legend {
   margin-bottom: 16px;
   padding-bottom: 6px;
   border-bottom: 2px solid rgba(74, 19, 95, 0.2);
+   
 }
 
-/* ===== LABELS ===== */
-label {
-  display: block;
-  font-size: 14px;
-  color: #3a1a4f;
-  margin-bottom: 6px;
-}
 
 .radio-group {
-   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;  
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* ===== LABELS ===== */
+.radio-group {
+  display: flex;
+  flex-direction: column; /* ⭐ empilha no mobile */
+  gap: 8px;
+ 
 }
 
 .radio-group label {
-  display: flex;
+  display: inline-flex;   /* mais estável que flex puro no Safari */
   align-items: center;
-  gap: 6px;
-  white-space: nowrap;
+  gap: 8px;
   font-size: 14px;
   color: #3a1a4f;
   cursor: pointer;
 }
 
-
 input[type="radio"] {
-  accent-color: #9c4dcc;
-  cursor: pointer;
+  width: auto;   /* ⭐ impede ele de herdar width: 100% */
   margin: 0;
 }
+
 
 input[type="radio"] {
   accent-color: #9c4dcc;
@@ -141,6 +143,20 @@ select:focus {
   outline: none;
   border-color: #9c4dcc;
   box-shadow: 0 0 0 2px rgba(156, 77, 204, 0.15);
+}
+
+/* Espaçamento só para labels normais */
+.form-anamnese > fieldset > label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-anamnese input,
+.form-anamnese textarea,
+.form-anamnese select {
+  margin-bottom: 8px; /* pequeno respiro depois da caixa */
 }
 
 /* ===== TEXTAREA ===== */
