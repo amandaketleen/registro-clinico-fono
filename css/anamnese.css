@@ -72,8 +72,10 @@ legend {
   margin-bottom: 16px;
   padding-bottom: 6px;
   border-bottom: 2px solid rgba(74, 19, 95, 0.2);
-   
+
+   display: inline-block;
 }
+   
 
 
 .radio-group {
@@ -120,6 +122,15 @@ input[type="radio"]:focus,
 input[type="radio"]:focus-visible {
   outline: none;
   box-shadow: none;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="date"] {
+  width: 100%;
 }
 
 
