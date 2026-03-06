@@ -71,9 +71,10 @@ legend {
   color: #4a135f;
   margin-bottom: 16px;
   padding-bottom: 6px;
-  border-bottom: 2px solid rgba(74, 19, 95, 0.2);
 
-   display: inline-block;
+  display: inline-block;
+  border-bottom: 2px solid rgba(74, 19, 95, 0.2);
+  width: fit-content;
 }
    
 
@@ -104,17 +105,10 @@ legend {
 }
 
 input[type="radio"] {
-  width: auto;   /* ⭐ impede ele de herdar width: 100% */
+  width: auto;
   margin: 0;
-}
-
-
-input[type="radio"] {
   accent-color: #9c4dcc;
   cursor: pointer;
-  margin: 0;
-  outline: none;
-  box-shadow: none;
 }
 
 /* remove qualquer foco estranho do navegador */
@@ -131,6 +125,8 @@ input, textarea {
 
 input[type="date"] {
   width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 
@@ -229,6 +225,10 @@ button:hover {
 
   .topo a {
     align-self: flex-start; /* botão fica à esquerda */
+  }
+  
+  legend{
+    display: inline-block;
   }
 
 
