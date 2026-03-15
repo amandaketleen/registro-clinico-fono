@@ -1,0 +1,245 @@
+/* === RESET GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === ESTILO BASE DA PÁGINA === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f7f0fb, #e6f3f8);
+  min-height: 100vh;
+}
+
+.container-principal {
+  padding: 0 16px;
+}
+
+/* === TOPO DA PÁGINA === */
+.topo {
+  position: relative; /* centraliza o título */
+  display: flex;
+  align-items: center;
+
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topo a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  background: #f1dbf9;
+  color: #16011b;
+  border: 1px solid #3d09482b;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.topo a:hover {
+  background-color: #6f3d81;
+  color: #e8bcff;
+}
+
+.topo h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #4a135f;
+}
+
+/* === FORMULÁRIO === */
+.form-anamnese {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* pra garantir que os inputs não ultrapassem o container */
+.form-anamnese input {
+  max-width: 100%;
+}
+
+/* === FIELDSET E LEGEND === */
+fieldset {
+  border: none;
+  margin-bottom: 32px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4a135f;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+
+  display: inline-block;
+  border-bottom: 2px solid rgba(74, 19, 95, 0.2);
+}
+
+/* === RADIO BUTTONS === */
+.radio-group {
+  display: flex;
+  flex-direction: column; /* empilha no mobile */
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #3a1a4f;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin: 0;
+  accent-color: #9c4dcc;
+  cursor: pointer;
+}
+
+/* remove foco estranho do navegador */
+input[type="radio"]:focus,
+input[type="radio"]:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/* === INPUTS E CAMPOS DE TEXTO === */
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ajustes para input de data */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 15px 14px;
+  box-sizing: border-box;
+}
+
+input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+}
+
+/* estilo padrão de inputs */
+input,
+textarea,
+select {
+  max-width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #d6cbe0;
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #9c4dcc;
+  box-shadow: 0 0 0 2px rgba(156, 77, 204, 0.15);
+}
+
+/* === LABELS ===*/
+.form-anamnese > fieldset > label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* pequeno espaço depois das caixas */
+.form-anamnese input,
+.form-anamnese textarea,
+.form-anamnese select {
+  margin-bottom: 8px;
+}
+
+/* === TEXTAREA === */
+textarea {
+  resize: none;
+}
+
+/* === BOTÕES === */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #7b2cbf, #9d4edd);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* botão de voltar */
+#btn-voltar {
+  padding: 7px 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: #9d4edd;
+  color: #fff;
+  transition: 0.2s;
+}
+
+#btn-voltar:hover {
+  background: #6f3d81;
+}
+
+
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+
+  .form-anamnese {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  .topo {
+    gap: 60px;
+  }
+
+  .topo h1 {
+    position: static;
+    transform: none;
+    font-size: 22px;
+  }
+
+  .topo a {
+    align-self: flex-start;
+  }
+
+}
